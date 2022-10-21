@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+    <title>DOM-tree</title>
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6" id="neverColors">
+            <h1>Demo DOM-tree</h1>
+            <div id="howto">
+                Rechts staat een schematische weergave van een eenvoudig HTML-document (<a href="images/domtree.png"
+                                                                                           target="_blank">DOM-tree</a>)
+                <ul>
+                    <li>Selecteer een element via onderstaande radiobuttons
+                        <ul>
+                            <li>Dit element wordt <span id="selected">oranje</span> aangeduid op het schema</li>
+                        </ul>
+                    </li>
+                    <li>Klik op een knop onderaan
+                        <ul>
+                            <li>De gerelateerde elementen worden <span id="related">rood</span> aangeduid op het schema
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form id="myForm">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#body">
+                                body
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#div">
+                                div
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#ula">
+                                ul A
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#lia1">
+                                List Item A1
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#lia2">
+                                List Item A2
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#lia3">
+                                List Item A3
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#ulb">
+                                ul B
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#lib1">
+                                List Item B1
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#lib2">
+                                List Item B2
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#lib3">
+                                List Item B3
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#span1" checked>
+                                Span I
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#span2">
+                                Span II
+                            </label>
+                        </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="elementRadio" value="#span3">
+                                Span III
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="buttons">
+                <button type="button" class="btn btn-secondary" id="btnParent">Parent</button>
+                <button type="button" class="btn btn-secondary" id="btnChildren">Children</button>
+                <button type="button" class="btn btn-secondary" id="btnAncestor">Ancestors</button>
+                <button type="button" class="btn btn-secondary" id="btnDescendant">Descendants</button>
+                <button type="button" class="btn btn-secondary" id="btnSibling">Siblings</button>
+            </div>
+        </div>
+
+        <div class="col descendants select" id="body">body
+            <div class="select" id="div">div
+                <ul class="select" id="ula">ul A
+                    <li class="select" id="lia1">List Item A1
+                        <span class="select" id="span1">Span I</span>
+                    </li>
+                    <li class="select" id="lia2">List Item A2
+                        <span class="select" id="span2">Span II</span>
+                    </li>
+                    <li class="select" id="lia3">List Item A3
+                        <span class="select" id="span3">Span III</span>
+                    </li>
+                </ul>
+                <ul class="select" id="ulb">ul B
+                    <li class="select" id="lib1">List Item B1
+                    </li>
+                    <li class="select" id="lib2">List Item B2
+                    </li>
+                    <li class="select" id="lib3">List Item B3
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+</html>

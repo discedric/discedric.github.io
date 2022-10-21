@@ -1,0 +1,28 @@
+.descendants {
+    margin-top:10px;
+    margin-right:10px;
+}
+
+.buttons {
+    text-align:center;
+}
+
+.descendants * {
+    display: block;
+    padding: 5px;
+    margin: 15px;
+}
+
+#selected {
+    color: orange;
+}
+
+#related {
+    color: red;
+}
+
+#howto {
+    margin: auto;
+    margin-bottom:30px;
+}
+
