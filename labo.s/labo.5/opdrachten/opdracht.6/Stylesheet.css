@@ -1,0 +1,29 @@
+h1 {
+    font-style: Arial;
+    font-size: 1.8em;
+}
+h2 {
+    font-style: Arial;
+    font-size: 1.5em;
+}
+h3 {
+    font-style: Arial;
+    font-size: 1.4em;
+}
+
+p {
+    font-style: "Times New Roman";
+    font-size: 1.2em;
+}
+
+.text1 p{
+    color: red;
+}
+
+.text2 p{
+    color: green;
+}
+
+.text3 p{
+    color: blue;
+}
