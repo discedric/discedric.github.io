@@ -1,0 +1,19 @@
+body {
+    margin:0; /* body krijgt door user agent stylesheet een margin die je meestal niet wil */
+}
+.cloudsBlock {
+    padding:10px;
+    background-size:cover;
+    background-image: url("../images/clouds.jpg");
+}
+
+.cloudsInformation {
+    padding:10px;
+    border:white solid 1px;
+    color:white;
+}
+
+.darkText {
+    color:black;
+}
+
