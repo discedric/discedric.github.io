@@ -1,0 +1,39 @@
+body{
+    background-color :aliceblue;
+    margin : 0;
+    padding : 0;
+}
+
+header{
+    background-color:azure;
+    text-align : center;
+}
+
+.labos{
+    width: 15%;
+}
+
+.opdrachten{
+    width: 30%;
+}
+
+main ul li{
+    list-style-type : none;
+    padding : 2px;
+    margin:3px;
+}
+
+main{
+    background-color:azure;
+}
+
+footer{
+    background-color:azure;
+    position:bottom;
+}
+
+footer ul li{
+    list-style-type : none;
+    padding : 2px;
+    margin : 3px;
+}

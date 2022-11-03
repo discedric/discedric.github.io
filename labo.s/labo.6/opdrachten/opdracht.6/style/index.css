@@ -1,0 +1,7 @@
+.checklist{
+    list-style-image: url('../images/check_box_outline_blank_FILL0_wght400_GRAD0_opsz24.png');
+}
+
+.checked{
+    list-style-image : url('../images/check_box_FILL0_wght400_GRAD0_opsz24.png');
+}
