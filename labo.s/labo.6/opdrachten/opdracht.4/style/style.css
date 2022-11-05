@@ -1,0 +1,67 @@
+body{
+    background-color :grey;
+    margin : 0;
+    padding : 0;
+}
+
+/* ---------------------------------------- */
+
+header{
+    background-color:darkgrey;
+    height:auto;
+    display : flex;
+}
+
+header h1{
+    font-size:3.2em;
+}
+
+header img{
+    height:150px;
+    
+}
+
+/* --------------------------------------- */
+
+main h1{
+    font-variant : small-caps;
+    background-color: red;
+}
+
+main a:hover{
+    padding: 0.5em;
+    background : grey;
+}
+
+main{
+    font : verdana;
+    font-size : 1.1em;
+    background-color: silver;
+    color: darkblue;
+    margin:10px 0px 10px 0px;
+    padding:10px 10px 10px 10px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column; 
+}
+
+/* ---------------------------------- */
+
+footer{
+    background-color:lightgrey;
+    position:relative;
+    padding:1px 10px 10px 10px;
+    width:100%;
+}
+
+footer ul li{
+    list-style-type : none;
+    padding : 2px;
+    margin : 3px;
+}
+
+/* --------------------------------- */
+
+.stippeltjesrand{
+    border: 1px dotted;
+}
