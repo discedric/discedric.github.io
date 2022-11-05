@@ -18,7 +18,6 @@ header h1{
 
 header img{
     height:150px;
-    
 }
 
 /* --------------------------------------- */
@@ -36,6 +35,11 @@ main{
     min-height: 100vh;
     display:flex;
     flex-direction: column; 
+}
+
+main iframe{
+    height: 750px;
+    width: 100%;
 }
 
 /* ---------------------------------- */
