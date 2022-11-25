@@ -1,0 +1,44 @@
+body{
+    background-color: gray;
+    margin:0;
+}
+
+header img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#wrapper{
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav{
+    background-color: white;
+    float:left;
+    width: 20%;
+    height:200px;
+}
+
+section span{
+    background-color: red;
+}
+
+section{
+    background-color: aqua;
+    float:left;
+    width:80%;
+    height:200px;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+footer{
+    background-color: aliceblue;
+    text-align:center;
+    float:left;
+    width:100%;
+    height:120px;
+}

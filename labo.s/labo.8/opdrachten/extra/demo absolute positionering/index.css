@@ -1,0 +1,24 @@
+body {
+    margin:0;
+    padding:100px;
+    background-color: green;
+}
+
+section {
+    padding:50px;
+    background-color:red;
+}
+
+.speelveld {
+    background-image:url('https://images.vexels.com/media/users/3/125822/preview2/cf7a7b3eacd8a11c892f58a36306e891-illustrated-clouds-background.jpg');
+    background-size:cover;
+    height:400px;
+
+    position:relative;
+}
+
+.player {
+    position:absolute;
+    left:50px;
+    top:30px;
+}
