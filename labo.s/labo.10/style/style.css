@@ -1,0 +1,54 @@
+body{
+    background-color :grey;
+    margin : 0;
+    padding : 0;
+}
+
+/* ---------------------------------------- */
+
+header{
+    background-color:darkgrey;
+    height:auto;
+    display : flex;
+}
+
+header h1{
+    font-size: 4vw;
+}
+
+header img{
+    height:150px;
+    
+}
+
+/* --------------------------------------- */
+
+main ul li{
+    list-style-type : none;
+    padding : 2px;
+    margin:3px;
+}
+
+main{
+    background-color:azure;
+    margin:10px 0px 10px 0px;
+    padding:10px 10px 10px 10px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column; 
+}
+
+/* ---------------------------------- */
+
+footer{
+    background-color:lightgrey;
+    position:relative;
+    padding:1px 10px 10px 10px;
+    width:100%;
+}
+
+footer ul li{
+    list-style-type : none;
+    padding : 2px;
+    margin : 3px;
+}

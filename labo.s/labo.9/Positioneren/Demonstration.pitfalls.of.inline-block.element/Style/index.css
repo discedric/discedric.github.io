@@ -1,0 +1,19 @@
+section {
+    background:gray;
+    border:2px solid black;
+    color:white;
+}
+div {
+    display:inline-block;
+    height:200px;
+    width:300px;
+
+}
+
+.coloredBlock1 {
+    background-color:Red;
+}
+
+.coloredBlock2 {
+    background-color:Blue;
+}
