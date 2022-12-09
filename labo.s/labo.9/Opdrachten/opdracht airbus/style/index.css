@@ -1,12 +1,19 @@
 body{
-    background-color: light gray;
+    margin: 0;
+    background: #E6E6E6 url('../fotos/pagebackground.png') repeat-y center;
+    font-family: "Arial", "Helvetica", sans-serif
+}
+
+#container {
+    margin: 0 auto;
+    width: 957px;
 }
 
 #top{
     height:200px;
-    text-align: center;
     background-image: url("../fotos/bgsky3.jpg");
     position: relative;
+    text-align: center;
     color: darkblue;
 }
 
@@ -30,26 +37,30 @@ body{
     font-style:italic;
 }
 
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: darkgray;
-}
-
-.gallery img{
-    background-color: white;
-    padding: 5px;
-}
-
 #news{
     float:right;
     width: 20%;
-    background-color: light gray;
+    background-color: lightgray;
+    border: 1px solid #999999
+}
+
+#news h1 {
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+
+#news p {
+    color: grey;
+    font-size: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #main{
     float:left;
-    width:80%;
+    width:75%;
 }
 
 .introduction{
@@ -60,19 +71,55 @@ body{
     padding:20px
 }
 
-.introduction p{
-    width:auto;
+.introduction > p{
+    overflow: hidden;
+    margin: 20px 0px 20px 0;
+    text-align: justify;
 }
 
-#bottom{
-    width: 100%;
-    background-color:gray;
+.introduction span {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.gallery {
+    background-color: #999999;
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+}
+
+.fotokader {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    background-color: white;
+    border: 2px dashed #999999;
+    float: left;
+    margin: 10px 10px;
+}
+
+#bottom {
+    clear: both;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+
+#bottom a {
+    color: white;
+}
+
+#block {
     display: inline-block;
+    margin-left: 120px;
+    margin-bottom: 0;
 }
 
-#bottom section{
-    display: flex;
-    color:white;
+#copyright {
+    text-align: center;
+    color: black;
+    background-color: white;
 }
 
 

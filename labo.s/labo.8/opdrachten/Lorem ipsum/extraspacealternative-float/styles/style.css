@@ -1,0 +1,15 @@
+body {
+    margin:0;
+}
+
+.column {
+    float:left;
+    width:50%;
+	/* no box-sizing:border-box required, default value content-box is ok */
+}
+
+.column_content {
+    padding:10px;
+    border:1px solid black;
+    margin:10px; /* this provides the extra space around the columns */
+}

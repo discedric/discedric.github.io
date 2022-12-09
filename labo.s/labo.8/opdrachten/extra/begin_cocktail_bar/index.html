@@ -2,14 +2,17 @@
 <html  lang="en">
   <head>
     <title>Cocktail-bar</title>
-  <style>
-  </style>
+
+      <link type="text/css" rel="stylesheet" href="style/lounge.css" />
+
   </head>
   <body>
+  <div id="wrapper">
       <header>
-          <p><img src="images/cocktails.png" alt="Cocktail Bar"/></p>
+          <img id="imgHeader" src="images/cocktails.png" alt="Cocktail Bar"/>
       </header>
-      <article>
+
+      <article id="elixirs">
           <h1>Weekly  Specials</h1>
           <p>
               <img src="images/yellow.gif" alt="Lemon Breeze Elixir"/>
@@ -50,7 +53,8 @@
           </p>
 
       </article>
- 	  <section>
+      <section id="content">
+
           <article>
           <h1>ORIGIN OF THE WORD “COCKTAIL</h1>
           <p>
@@ -90,14 +94,14 @@
           </p>
           </article>
           <article>
-          <h2>What's playing at the Lounge</h2>
+          <h1>What's playing at the Lounge</h1>
           <p>
               We're frequently asked about the music we play at the lounge, and no wonder,
               it's great stuff. Just for you, we keep a list here on the site, updated weekly.
               Enjoy.
           </p>
           <ul>
-              <li>Buddha Bar, Claude Challe</li>
+              <li><span class="cd">Buddha Bar</span>, <span class="artist"> Claude Challe</span></li>
               <li>When It Falls,Zero 7</li>
               <li>Earth 7, L.T.J. Bukem</li>
               <li>Le Roi Est Mort, Vive Le Roi!, Engima</li>
@@ -110,6 +114,6 @@
         All trademarks and registered trademarks appearing on this site are 
         the property of their respective owners.
       </footer>
-  
+  </div>
   </body>
 </html>

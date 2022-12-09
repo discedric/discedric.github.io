@@ -1,0 +1,16 @@
+body {
+    margin:0;
+}
+
+.column {
+    float:left;
+    width:50%;
+	box-sizing:border-box;
+	
+	padding:10px; /* this provides the extra space around the columns */
+}
+
+.column_content {
+    padding:10px;
+    border:1px solid black;
+}
